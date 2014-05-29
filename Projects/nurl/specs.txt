@@ -1,0 +1,60 @@
+Feature:  GET
+    In order : to see the content of a web page
+    as a : shell fan
+    I want to download a web page
+	
+Scenario: show the content of a page
+    Given : I entered an url option `-url "http://api.openweathermap.org/data/2.5/weather?q=paris&units=metric"`
+    And : any other option
+    When : I press enter
+    Then : the result should be the same I see in my browser with this URL.
+
+Scenario: show the content of a fake page
+    Given : I entered a fake url option `-url "http://fake"`
+    And : any other option
+    When : I press enter
+	Then : the result should be `URL invalide`
+	
+Scenario: save the content of a page
+    Given : I entered an url option `-url "http://api.openweathermap.org/data/2.5/weather?q=paris&units=metric"`
+    And : I enter the option `-save` with the value 'json.txt'
+    When : I press enter
+    Then : a file called `json.txt` should be created with the content I see in my browser with this URL
+	
+Scenario: save the content of a fake page
+    Given : I entered an url option `-url "http://fake"`
+    And : I enter the option `-save` with the value 'fake.txt'
+    When : I press enter
+    Then : a file called `fake.txt` should be created with the content `URL invalide`
+	
+--------------------------------------------------------------------------------------------------------------------------
+
+Feature:  Test loading duration time of a website
+
+Scenario: test and show the loading duration time of a fake website a number of times
+	Given : I entered a fake url option `-url "http://fake"`
+	And : I enter the option `-time` with the value '5'
+	When : I press enter
+	Then : the result should be `0 0 0 0 0`
+
+Scenario: test and show the average of a number of times of loading duration time of a fake website
+	Given : I entered a fake url option `-url "http://fake"`
+	And : I enter the option `-time` with the value '5'
+	And : I enter the option `-avg`
+	When : I press enter
+	Then : the result should be `0`
+	
+Scenario: test and show the loading duration time of website a number of times
+	Given : I entered an url option `-url "http://api.openweathermap.org/data/2.5/weather?q=paris&units=metric"`
+	And : I enter the option `-time` with the value '5'
+	When : I press enter
+	Then : the result should be 5 values of time (in ms)  not equal to 0.
+
+Scenario: test and show the average of a number of times of loading duration time of a fake website
+	Given : I entered a fake url option `-url "http://fake"`
+	And : I enter the option `-time` with the value '5'
+	And : I enter the option `-avg`
+	When : I press enter
+	Then : the result should be a time (in ms) not equal to 0
+			
+		
