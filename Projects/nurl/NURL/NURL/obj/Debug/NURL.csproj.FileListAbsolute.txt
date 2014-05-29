@@ -1,0 +1,8 @@
+C:\Users\Charly-PC\Desktop\CSharp\ProjectsExercices\CSharpProjectsExercices\Projects\nurl\NURL\NURL\bin\Debug\NURL.exe.config
+C:\Users\Charly-PC\Desktop\CSharp\ProjectsExercices\CSharpProjectsExercices\Projects\nurl\NURL\NURL\bin\Debug\NURL.exe
+C:\Users\Charly-PC\Desktop\CSharp\ProjectsExercices\CSharpProjectsExercices\Projects\nurl\NURL\NURL\bin\Debug\NURL.pdb
+C:\Users\Charly-PC\Desktop\CSharp\ProjectsExercices\CSharpProjectsExercices\Projects\nurl\NURL\NURL\bin\Debug\nunit.framework.dll
+C:\Users\Charly-PC\Desktop\CSharp\ProjectsExercices\CSharpProjectsExercices\Projects\nurl\NURL\NURL\bin\Debug\nunit.framework.xml
+C:\Users\Charly-PC\Desktop\CSharp\ProjectsExercices\CSharpProjectsExercices\Projects\nurl\NURL\NURL\obj\Debug\NURL.csprojResolveAssemblyReference.cache
+C:\Users\Charly-PC\Desktop\CSharp\ProjectsExercices\CSharpProjectsExercices\Projects\nurl\NURL\NURL\obj\Debug\NURL.exe
+C:\Users\Charly-PC\Desktop\CSharp\ProjectsExercices\CSharpProjectsExercices\Projects\nurl\NURL\NURL\obj\Debug\NURL.pdb
